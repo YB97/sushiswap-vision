@@ -4,7 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/zippoxer/sushiswap-subgraph-fork'
+    uri: 'https://api.thegraph.com/subgraphs/name/chickens-1/chickens/graphql'
   }),
   cache: new InMemoryCache(),
   shouldBatch: true
