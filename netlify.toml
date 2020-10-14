@@ -9,3 +9,5 @@
    [headers.values]
       Access-Control-Allow-Origin = "*"
       Referrer-Policy = "origin-when-cross-origin"
+      access-control-allow-methods = "GET, OPTIONS, POST"
+      access-control-allow-headers = "Content-Type, User-Agent"
