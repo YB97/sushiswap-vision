@@ -12,7 +12,13 @@ export function useColor(tokenAddress, token) {
     // const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
     //   tokenAddress
     // )}/logo.png`
-    const path = img
+    const path =
+      isAddress(tokenAddress) === '0x297C338Da24BeEcD4C412a3537650AC9010ea628'
+        ? img
+        : `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
+            tokenAddress
+          )}/logo.png`
+
     if (path) {
       Vibrant.from(path).getPalette((err, palette) => {
         if (palette && palette.Vibrant) {
