@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  headers = { Access-Control-Allow-Origin = "*"}
+
+[[headers]]
+   for = "/*"
+   [headers.values]
+      Access-Control-Allow-Origin = "*"
+      Referrer-Policy = "origin-when-cross-origin"
+      access-control-allow-methods = "GET, OPTIONS, POST"
+      access-control-allow-headers = "Content-Type, User-Agent"
+      sec-fetch-site = "cross-site"

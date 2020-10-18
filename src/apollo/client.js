@@ -3,7 +3,9 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
-  link: 'http://localhost:8000/subgraphs/name/zippoxer/sushiswap',
+  link: new HttpLink({
+    uri: 'https://api.thegraph.com/subgraphs/name/chickens-1/chicken-subgraph'
+  }),
   cache: new InMemoryCache(),
   shouldBatch: true
 })
