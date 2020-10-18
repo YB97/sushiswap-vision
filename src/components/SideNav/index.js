@@ -23,7 +23,9 @@ const Wrapper = styled.div`
   z-index: 9999;
   box-sizing: border-box;
   /* background-color: #1b1c22; */
-  background: linear-gradient(193.68deg, #8c6651 0.68%, rgb(112, 82, 64) 100.48%);
+  /* background: rgb(158, 143, 129); */
+  /* background: linear-gradient(193.68deg, #fdf5eb 0.68%, rgb(158, 143, 129) 100.48%); */
+  background: linear-gradient(193.68deg, #baa999 0.68%, #9e8f81 100.48%);
   color: ${({ theme }) => theme.bg2};
 
   @media screen and (max-width: 800px) {
@@ -169,18 +171,8 @@ function SideNav({ history }) {
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://help.sushidocs.com/" target="_blank">
+              <Link href="https://github.com/cdk3/chkn.farm" target="_blank">
                 Docs
-              </Link>
-            </HeaderText>
-            <HeaderText>
-              <Link href="https://discord.gg/hJ2p555" target="_blank">
-                Discord
-              </Link>
-            </HeaderText>
-            <HeaderText>
-              <Link href="https://twitter.com/SushiSwap" target="_blank">
-                Twitter
               </Link>
             </HeaderText>
             <Toggle isActive={isDark} toggle={toggleDarkMode} />

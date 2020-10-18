@@ -602,7 +602,6 @@ export function Updater() {
     async function getData() {
       // get top pairs for overview list
       let topTokens = await getTopTokens(ethPrice, ethPriceOld)
-      console.log(topTokens)
       topTokens && updateTopTokens(topTokens)
     }
     ethPrice && ethPriceOld && getData()

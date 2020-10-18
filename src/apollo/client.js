@@ -11,18 +11,24 @@ export const client = new ApolloClient({
 })
 
 export const healthClient = new ApolloClient({
-  link: 'https://api.thegraph.com/index-node/graphql',
+  link: new HttpLink({
+    uri: 'https://api.thegraph.com/index-node/graphql'
+  }),
   cache: new InMemoryCache(),
   shouldBatch: true
 })
 
 export const v1Client = new ApolloClient({
-  link: 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswap',
+  link: new HttpLink({
+    uri: 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswap'
+  }),
   cache: new InMemoryCache(),
   shouldBatch: true
 })
 
 export const blockClient = new ApolloClient({
-  link: 'https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks',
+  link: new HttpLink({
+    uri: 'https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks'
+  }),
   cache: new InMemoryCache()
 })

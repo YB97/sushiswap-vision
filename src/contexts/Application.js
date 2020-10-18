@@ -276,10 +276,9 @@ export function useListedTokens() {
   useEffect(() => {
     async function fetchList() {
       const allFetched = await SUPPORTED_LIST_URLS__NO_ENS.reduce(async (fetchedTokens, url) => {
-        console.log(url)
         const tokensSoFar = await fetchedTokens
         const newTokens = await getTokenList(url)
-        // console.log('HELLO', tokensSoFar, newTokens)
+
         return Promise.resolve([...tokensSoFar, ...newTokens.tokens])
       }, Promise.resolve([]))
       let formatted = allFetched?.map(t => t.address.toLowerCase())

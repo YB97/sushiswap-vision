@@ -17,7 +17,7 @@ const theme = (darkMode, color) => ({
   panelColor: darkMode ? 'rgba(255, 255, 255, 0)' : 'rgba(255, 255, 255, 0)',
   backgroundColor: darkMode ? '#212429' : '#F7F8FA',
 
-  uniswapPink: darkMode ? '#705240' : 'black',
+  uniswapPink: darkMode ? '#9e8f81' : 'black',
 
   concreteGray: darkMode ? '#292C2F' : '#FAFAFA',
   inputBackground: darkMode ? '#1F1F1F' : '#FAFAFA',
@@ -31,7 +31,7 @@ const theme = (darkMode, color) => ({
   text5: darkMode ? '#2C2F36' : '#EDEEF2',
 
   // special case text types
-  white: '#FFFFFF',
+  white: '#000',
 
   // backgrounds / greys
   bg1: darkMode ? '#212429' : '#FAFAFA',
@@ -48,17 +48,17 @@ const theme = (darkMode, color) => ({
   divider: darkMode ? 'rgba(43, 43, 43, 0.435)' : 'rgba(43, 43, 43, 0.035)',
 
   //primary colors
-  primary1: darkMode ? '#2172E5' : '#705240',
+  primary1: darkMode ? '#2172E5' : '#9e8f81',
   primary2: darkMode ? '#3680E7' : '#FF8CC3',
   primary3: darkMode ? '#4D8FEA' : '#FF99C9',
   primary4: darkMode ? '#376bad70' : '#F6DDE8',
   primary5: darkMode ? '#153d6f70' : '#FDEAF1',
 
   // color text
-  primaryText1: darkMode ? '#6da8ff' : '#705240',
+  primaryText1: darkMode ? '#6da8ff' : '#9e8f81',
 
   // secondary colors
-  secondary1: darkMode ? '#2172E5' : '#705240',
+  secondary1: darkMode ? '#2172E5' : '#9e8f81',
   secondary2: darkMode ? '#17000b26' : '#F6DDE8',
   secondary3: darkMode ? '#17000b26' : '#FDEAF1',
 

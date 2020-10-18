@@ -324,7 +324,6 @@ const getChartData = async oldestDateToFetch => {
 
   try {
     while (!allFound) {
-      console.log(GLOBAL_CHART)
       let result = await client.query({
         query: GLOBAL_CHART,
         variables: {
@@ -334,7 +333,6 @@ const getChartData = async oldestDateToFetch => {
         fetchPolicy: 'cache-first'
       })
       skip += 1000
-      console.log(result.data)
       data = data.concat(result.data.uniswapDayDatas)
       if (result.data.uniswapDayDatas.length < 1000) {
         allFound = true
