@@ -5,7 +5,7 @@ Currently a fork of [uniswap-info](https://github.com/Uniswap/uniswap-info) for 
 ![Tests](https://github.com/sushiswap/sushiswap-vision/workflows/Tests/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-Transaction and liquidity pool stats for [SushiSwap](https://sushiswapclassic.org).
+Transaction and liquidity pool stats for [CHKN.farm)](https://CHKN.farm).
 
 Check it out live: [https://sushiswap.vision](https://sushiswap.vision).
 

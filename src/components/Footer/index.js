@@ -4,7 +4,7 @@ import { Flex } from 'rebass'
 import Link from '../Link'
 
 const links = [
-  { url: 'https://sushiswapclassic.org', text: 'About' },
+  { url: 'https://CHKN.farm', text: 'About' },
   { url: 'https://github.com/sushiswap/', text: 'Code' }
 ]
 
