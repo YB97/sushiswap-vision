@@ -2,7 +2,7 @@
   "name": "CHKN.farm-info",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://CHKN.vision",
+  "homepage": "http://www.analytics.chkn.farm",
   "dependencies": {
     "@popperjs/core": "^2.4.2",
     "@reach/portal": "^0.10.3",
