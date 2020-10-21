@@ -353,7 +353,7 @@ const getChartData = async oldestDateToFetch => {
       })
 
       // fill in empty days ( there will be no day datas if no trades made that day )
-      let timestamp = data[0].date ? data[0].date : oldestDateToFetch
+      let timestamp = data[0] && data[0].date ? data[0].date : oldestDateToFetch
       let latestLiquidityUSD = data[0].totalLiquidityUSD
       let latestDayDats = data[0].mostLiquidTokens
       let index = 1
