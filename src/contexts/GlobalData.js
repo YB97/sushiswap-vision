@@ -565,8 +565,8 @@ export function useGlobalChartData() {
   const [oldestDateFetch, setOldestDateFetched] = useState()
   const [activeWindow] = useTimeframe()
 
-  const chartDataDaily = state?.chartData?.daily
-  const chartDataWeekly = state?.chartData?.weekly
+  const chartDataDaily = state?.chartData?.daily?.filter(item => item.date >= 1603054800)
+  const chartDataWeekly = state?.chartData?.weekly?.filter(item => item.date >= 1603054800)
 
   /**
    * Keep track of oldest date fetched. Used to
@@ -577,7 +577,8 @@ export function useGlobalChartData() {
     // based on window, get starttime
     let startTime = getTimeframe(activeWindow)
 
-    if ((activeWindow && startTime < oldestDateFetch) || !oldestDateFetch) {
+    if ((activeWindow && startTime < 1603054800) || !oldestDateFetch) {
+      // if ((activeWindow && startTime < oldestDateFetch) || !oldestDateFetch) {
       setOldestDateFetched(startTime)
     }
   }, [activeWindow, oldestDateFetch])
